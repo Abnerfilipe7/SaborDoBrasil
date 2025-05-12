@@ -30,6 +30,7 @@ body {
   justify-content: center;
   align-items: start;
   padding-top: 20px;
+  
 }
 .main-content { grid-area: main; }
 footer { grid-area: footer; }
@@ -45,14 +46,27 @@ footer {
   grid-area: footer;
   background-color: #D97014;
   color: white;
-  padding: 15px;
-  text-align: center;
 }
 
-footer .social img {
-  margin: 0 5px;
-  vertical-align: middle;
+.footer-content {
+  display: flex;
+  justify-content: center; /* Centraliza os itens no rodapé */
+  align-items: center; /* Alinha verticalmente */
+  gap: 400px; /* Espaçamento entre os itens */
+  flex-wrap: wrap; /* Permite quebra em telas menores */
+  padding-top: 70px; /* Adiciona espaçamento do topo */
 }
+
+.footer-content span {
+  font-size: 14px;
+}
+
+.social {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
 
 #sabor-paragrafo {
   text-align: center;
@@ -79,6 +93,7 @@ hr {
   border: 1px solid #C2BEBE;
   padding: 10px;
   border-radius: 5px;
+   margin-bottom: 30px;
 }
 
 .publicacao-img {
@@ -91,7 +106,7 @@ hr {
   font-size: 20px;
   color: #000;
   text-align: left;
-  margin-top: 10px;
+  
 }
 
 .publicacao-legenda {
@@ -122,4 +137,17 @@ hr {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+   position: absolute;
+  top: 20px; 
+  right: 20px; 
+}
+#modal-title{
+ text-align: center;
+ align-items: center;
+}
+
+.modal-header .modal-title {
+  text-align: center; /* Centraliza o texto */
+  width: 100%; /* Garante que o texto ocupe toda a largura */
+  margin: 0; /* Remove margens extras */
 }
